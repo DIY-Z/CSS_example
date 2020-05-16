@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器</title>
+
+    <style>
+
+        div p{
+            color:red;
+        }
+        div > p{
+            border:1px solid;
+        }
+        input[type='text']{
+            border:5px solid;
+        }
+        <!-- 不过通过在浏览器上打开发现链接显示有时并没有按照代码要求的那样显示 -->
+        <!-- 设置链接初始颜色 -->
+        a:link{
+            color:#000000;
+        }
+        <!-- 设置当鼠标悬浮在链接上时的颜色 -->
+        a:hover{
+            color:#00FF00;
+        }
+        <!-- 实则点击链接过程中的颜色 -->
+        a:active{
+            color:#FF00FF;
+        }
+        <!-- 设置访问链接后的颜色 -->
+        a:visited{
+            color:#0000FF;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>船长</p>
+    </div>
+    <p>黑马</p>
+    <div>aaa</div>
+
+    <input type="text">
+    <input type="password">
+    <hr>
+    <a href="#">传智播客</a>
+</body>
+</html>
